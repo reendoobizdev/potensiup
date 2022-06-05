@@ -19,6 +19,8 @@ module.exports = {
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
+      cyan: "0px 20px 20px -15px rgba(56, 166, 145, 0.81)",
+      "cyan-md": "0px 20px 40px -15px rgba(56, 166, 145, 0.81)",
       none: "none",
     },
     colors: {
@@ -33,6 +35,10 @@ module.exports = {
       },
       green: {
         500: "#2FAB73",
+      },
+      cyan:{
+        500:"#38A691",
+        100: "#b9fad5"
       },
       white: {
         300: "#F8F8F8",
