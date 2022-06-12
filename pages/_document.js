@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { content } from "../content/landing";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -17,7 +18,7 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Landingpage VPN LaslesVPN Best VPN For Privacy, Country and Cheapest"
+            content={content.head.meta.content}
           />
         </Head>
         <body>
