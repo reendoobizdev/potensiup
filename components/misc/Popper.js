@@ -9,11 +9,11 @@ export const Popper = ({id, icon, title, children}) => {
             <span data-tip data-for={id} className="rounded-full border-2 border-cyan-500 bg-white-500 text-cyan-500 hover:bg-cyan-500 hover:text-white-500 h-12 w-12 py-2.5 flex justify-center">
                 <FontAwesome className="h-6 w-6" name={icon}/>
             </span>
-            <div className="absolute -top-9 -ml-10 text-center mb-36 w-32 text-xs font-medium uppercase text-cyan-500">{title}</div>
+            <div className="absolute top-3 ml-16 md:-ml-10 md:-top-9 md:text-center mb-36 w-32 text-xs font-medium uppercase text-cyan-500">{title}</div>
         </div>
         <ReactTooltip className="react-popper" 
-          id={id} place="bottom" offset={{bottom: -10}} effect="solid"
-          delayHide={500}         
+          id={id} place="right" offset={{bottom: -10}} effect="solid"
+          delayHide={200}         
           backgroundColor="transparent"
           textColor="#38A691"
         >

@@ -31,16 +31,20 @@ const Hero = () => {
       <div className="relative w-full flex my-10">
         <div className="rounded-xl w-full bg-white-500 z-10">
           <div className="p-5">
-            <div className="text-xl mb-16 font-medium text-center">
+            <div className="text-xl mb-10 font-medium text-center">
               {content.program.title}
             </div>
-            <div className="mx-4 px-4 pt-4 pb-10">
-                <div className="flex items-center justify-center">
+            <div className="md:mx-4 md:px-4 pt-4 pb-10">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-center">
                   {
                     content.program.steps.map((step, index) => (
                       <React.Fragment key={step.id}>
                         {
-                          index === 0 ? null:<div className="flex-auto border-t-2 border-cyan-500"></div>
+                          index === 0 ? null:
+                          <React.Fragment>
+                            <div className="flex-auto border-t-2 border-cyan-500 hidden md:block"></div>
+                            <div className="flex-auto border-l-2 border-cyan-500 md:hidden h-20 ml-6 md:ml-0"></div>
+                          </React.Fragment>
                         }
                         <Popper  id={step.id} title = {step.title} icon={step.icon}>
                           {

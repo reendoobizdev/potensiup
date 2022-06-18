@@ -15,28 +15,33 @@ const Feature = () => {
         Bidang Kerja
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="px-10">
+        <div className="px-16">
           <Lottie loop play
             animationData={codingJson}
             className="w-full"
           />
         </div>
-        <div className="flex flex-col py-12 px-24 justify-center">
+        <div className="flex flex-col md:py-12 px-16 md:px-24 justify-center">
           <div className="text-2xl text-center my-3">
             Web Developer
           </div>
           <ButtonPrimary>Daftar sebagai web developer</ButtonPrimary>
         </div>
       </div>
-      <div className="grid grid-cols-1 grid-re md:grid-cols-2">
-        
-        <div className="flex flex-col py-12 px-24 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-0">
+        <div className="px-16 md:hidden">
+          <Lottie loop play
+            animationData={designJson}
+            className="w-full"
+          />
+        </div>
+        <div className="flex flex-col md:py-12 px-16 md:px-24 justify-center">
           <div className="text-2xl text-center my-3">
             Product Designer
           </div>
-          <ButtonPrimary addClass="bg-gray-100">Coming Soon</ButtonPrimary>
+          <ButtonPrimary addClass="bg-gray-100" disabled>Coming Soon</ButtonPrimary>
         </div>
-        <div className="px-10">
+        <div className="px-16 hidden md:block">
           <Lottie loop play
             animationData={designJson}
             className="w-full"
