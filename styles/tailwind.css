@@ -93,8 +93,8 @@ li.close:before {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 4rem;
+  right: 1rem;
   cursor: pointer;
   background-color: #25d366;
   border-radius: 50%;
