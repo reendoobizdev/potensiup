@@ -2,24 +2,30 @@ import React, { useState } from "react";
 
 // import react slick
 import Slider from "react-slick";
-import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
   contentList = [
     {
-      q: "Berapa biaya yang harus dibayar untuk mulai kursus?",
-      a: "Rp 250.000 jika hendak mengikuti program pelatihan skill",
+      q: "Bagaimana cara saya mendaftar?",
+      a: "Kamu bisa langsung klik tombol \"Daftar\" di pojok kanan atas website potensiup.com, kamu akan diarahkan ke google form kemudian silahkan isi dan klik \"Submit\" jika sudah selesai",
+    },
+    {
+      q: "Apakah saya akan ditarik biaya jika mendaftar?",
+      a: "Kamu hanya akan ditarik biaya ketika mendaftar pada paket intensif sedangkan paket yang lain tidak memiliki penarikan biaya di awal",
+    },
+    {
+      q: "Berapa biaya untuk mengikuti pelatihan?",
+      a: "Rp 500.000 jika hendak mengikuti paket intensif. Lalu jika diterima kerja, bayar lagi sebesar Rp 500.000.",
     },
     {
       q: "Kapan harus bayar biaya pelatihan?",
       a: "Bayar di depan sebelum pelatihan dimulai",
     },
     {
-      q: "Bagaimana jika saya tidak punya uang sama sekali?",
-      a: "Belajar sendiri, lalu bisa langsung ikut tes sertifikasi. Jika lolos, bisa langsung dibantu dicarikan pekerjaan. Jika diterima, baru bayar Rp 250.000",
+      q: "Bagaimana jika saya tidak mampu membayar biaya pelatihan?",
+      a: "Belajar sendiri, lalu bisa langsung ikut tes sertifikasi. Jika lolos akan dibantu dicarikan pekerjaan dan hanya bayar Rp 500.000 jika diterima kerja. Selain itu bisa juga dengan mengikuti program beasiswa.",
     },
   ],
 }) => {
@@ -63,7 +69,7 @@ const Testimoni = ({
               <p className="text-left text-lg text-black-600 capitalize">
                 “{li.q}”
               </p>
-              <p className="mt-5 text-left">“{li.a}”.</p>
+              <p className="mt-5 text-left">{li.a}.</p>
             </div>
           </div>
         ))}

@@ -4,6 +4,7 @@ import designJson from '../public/assets/design.json';
 import React from "react";
 import Lottie from "react-lottie-player";
 import ButtonPrimary from './misc/ButtonPrimary';
+import { content } from '../content/landing';
 
 const Feature = () => {
   return (
@@ -25,7 +26,9 @@ const Feature = () => {
           <div className="text-2xl text-center my-3">
             Web Developer
           </div>
-          <ButtonPrimary>Daftar sebagai web developer</ButtonPrimary>
+          <a target="_blank" href={content.register}>
+            <ButtonPrimary>Daftar sebagai web developer</ButtonPrimary>
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-0">

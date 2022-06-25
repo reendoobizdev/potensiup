@@ -3,6 +3,7 @@ import Lottie from "react-lottie-player";
 import { content } from "../content/landing";
 import lottieJson from '../public/assets/employee.json';
 import ButtonPrimary from "./misc/ButtonPrimary";
+import FontAwesome from "./misc/FontAwesome";
 import { Popper } from "./misc/Popper";
 const Hero = () => {
   return (
@@ -31,8 +32,11 @@ const Hero = () => {
       <div className="relative w-full flex my-10">
         <div className="rounded-xl w-full bg-white-500 z-10">
           <div className="p-5">
-            <div className="text-xl mb-10 font-medium text-center">
+            <div className="text-xl font-medium text-center">
               {content.program.title}
+            </div>
+            <div className="text-sm mb-14 text-gray-400 text-center">
+              Klik icon untuk informasi detail
             </div>
             <div className="md:mx-4 md:px-4 pt-4 pb-10">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-center">
@@ -51,7 +55,19 @@ const Hero = () => {
                             !step.notes? null : 
                             <div className="text-right mb-3"><em>{step.notes}</em></div>
                           }
-                          <div className="text-center">{step.content}</div>
+                          {
+                            Array.isArray(step.content) ? <ul>
+                              {
+                                step.content.map((cont, idx) =>(
+                                  <li key={idx} className="flex items-center"> 
+                                    <FontAwesome name="FaChevronRight" className="mr-2 w-2"/>
+                                    {cont}
+                                  </li>
+                                ))
+                              }
+                            </ul> :
+                            <div className="text-center">{step.content}</div>
+                          }
                           {
                             !step.time? null:
                             <div className="font-bold text-center mt-4">Waktu: {step.time}</div>

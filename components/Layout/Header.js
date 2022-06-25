@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import Logo from "../../public/assets/potensiup-long.svg";
+import { content } from "../../content/landing";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -108,8 +108,10 @@ const Header = () => {
                   Sign In
               </a>
             </Link> */}
-            <ButtonOutline>Daftar</ButtonOutline>
-          </div>
+            <a target="_blank" href={content.register}>
+              <ButtonOutline>Daftar</ButtonOutline>
+            </a>
+            </div>
         </nav>
       </header>
       {/* Mobile Navigation */}
