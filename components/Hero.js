@@ -26,7 +26,9 @@ const Hero = () => {
           <p className="text-black-500 mt-4 mb-6">
             {content.hero.subtitle}
           </p>
-          <ButtonPrimary>{content.hero.button}</ButtonPrimary>
+          <a href={content.register} target="_blank">
+            <ButtonPrimary>{content.hero.button}</ButtonPrimary>
+          </a>
         </div>
       </div>
       <div className="relative w-full flex my-10">
