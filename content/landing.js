@@ -31,7 +31,7 @@ export const content = {
                     "Sesi live dan tugas harian",
                     "Kuis di tiap akhir pekan",
                 ],
-                time: "2 Bulan",
+                time: "3 Bulan",
                 notes: "Opsional"
             },
             {
@@ -39,20 +39,21 @@ export const content = {
                 title: "Proyek akhir (sertifikasi)",
                 icon: "FaGraduationCap",
                 content: "Mengerjakan tugas akhir berupa proyek sederhana yang sering ditemukan dalam perusahaan. Sertifikat diberikan bagi mereka yang dapat mengerjakan tugas dengan baik.",
-                time: "2 Minggu"
+                time: "2-4 Minggu"
             },
             {
                 id: "prog3",
                 title: "Simulasi tes masuk kerja",
                 icon: "FaEdit",
                 content: "Mengerjakan contoh soal yang biasa keluar saat tes masuk kerja. Contoh soal disiapkan dari beberapa perusahaan terkenal baik startup maupun korporat.",
-                time: "1 Bulan"
+                time: "1 Minggu"
             },
             {
                 id: "prog4",
                 title: "Penyaluran kerja",
                 icon: "FaBriefcase",
                 content: "Tim PotensiUp membantu merekomendasikan peserta ke perusahaan.",
+                time: "1-3 Bulan"
             }
         ]
     },
@@ -77,7 +78,7 @@ export const content = {
                     active: true
                 },
             ],
-            priceAfter: "Rp 500.000"
+            priceAfter: "Rp 1.000.000"
         },
         {
             title:"Paket Intensif",
@@ -99,8 +100,7 @@ export const content = {
                     active: true
                 },
             ],
-            priceBefore: "Rp 500.000",
-            priceAfter: "Rp 500.000"
+            priceBefore: "Rp 2.000.000"
         },
         {
             title:"Paket Beasiswa",
@@ -123,7 +123,8 @@ export const content = {
                     active: true
                 },
             ],
-            priceAfter: "Rp 500.000"
+            priceAfter: "Rp 1.000.000",
+            priceConditionAfter: "Hanya saat diterima kerja"
         }
     ]
 }
