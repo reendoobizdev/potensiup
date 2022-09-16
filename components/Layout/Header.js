@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import Logo from "../../public/assets/potensiup-long.svg";
+import Logo from "../../public/assets/potensiup-p.svg";
 import { content } from "../../content/landing";
 import InfoBanner from "../InfoBanner";
 
@@ -24,6 +24,7 @@ const Header = () => {
           <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
             <div className=" flex items-center">
               <Logo className="h-10 w-auto" />
+              <div className="font-bold text-xl" >{content.hero.titleBrand}</div>
             </div>
             <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
               {

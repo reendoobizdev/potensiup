@@ -1,7 +1,7 @@
 export const content = {
-    info: "Ikuti Webinar PotensiUP, 30 Juli 2022 13:00 - 15:00 WIB",
-    infoButton: "Registrasi Webinar",
-    infoLink:"https://bit.ly/WebinarPotensiUp",
+    // info: "Ikuti Webinar PotensiUP, 30 Juli 2022 13:00 - 15:00 WIB",
+    // infoButton: "Registrasi Webinar",
+    // infoLink:"https://bit.ly/WebinarPotensiUp",
     register:"https://forms.gle/cV3aKmuPfX7s3Znm9",
     head:{
         title: "PotensiUp | Mencetak generasi siap kerja",
